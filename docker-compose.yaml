@@ -1,0 +1,5 @@
+services:
+  webapp:
+    image: vlan_project:1
+    ports:
+      - "80:3000"

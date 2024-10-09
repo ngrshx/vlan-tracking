@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container"></div>
+    <div class="header">
+      <p>LOGO</p>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="/vlan-base">VLAN Base</a></li>
+        <li><a href="#">Documentation</a></li>
+      </ul>
+    </div>
+    <div class="add-vlan-section">
+      <div class="text">
+        <h1>VLAN Tracking<span class="cursor">_</span></h1>
+        <h3>Add your IP address and start VLAN tracking!</h3>
+        <h5>It helps to know the number of users in each VLAN.</h5>
+      </div>
+      <div class="add-vlan">
+        <form method="POST" action="/add">
+          <input
+            name="api_key"
+            class="input-ip"
+            type="text"
+            placeholder="Enter IP address"
+            required
+          />
+          <button class="button-add" type="submit">ADD</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
